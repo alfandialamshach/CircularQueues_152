@@ -49,6 +49,7 @@ public:
 		//cek jika antrian memiliki satu element
 		if (FRONT == REAR) {
 			FRONT = -1;
+
 			REAR = -1;
 		}
 		else {
@@ -59,4 +60,8 @@ public:
 				FRONT = FRONT + 1;
 		}
 	}
+	void display() {
+
+	}
+	
 };
