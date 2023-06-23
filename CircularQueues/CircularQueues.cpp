@@ -40,6 +40,23 @@ public:
 
 	void remove() {
 		//Apakah antrian kosong
-		in
+		if (FRONT == -1) {
+			cout << "Qeue underflow\n";
+			return;
+		}
+		cout << "\nThe element deleted from the queue is: " << queue_array[FRONT] << "\n";
+
+		//cek jika antrian memiliki satu element
+		if (FRONT == REAR) {
+			FRONT = -1;
+			REAR = -1;
+		}
+		else {
+			// Jika element yang dihapus berada disisi terakhir array, kembali ke awal array
+			if (FRONT == max - 1)
+				FRONT = 0;
+			else
+				FRONT = FRONT + 1;
+		}
 	}
 };
