@@ -80,6 +80,12 @@ public:
 			}
 			cout << endl;
 		}
+		else {
+			//Jika FRONT_position > REAR_position, iterasi dari FRON hingga akhir array
+			while (FRONT_position <= max - 1) {
+
+			}
+		}
 	}
 	
 };
